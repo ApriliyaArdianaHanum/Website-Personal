@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Apriliya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      background: #fef4f8;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      background: #ffdde4;
+      color: #333;
+      padding: 1rem 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 2.5rem;
+      color: #d84b8b;
+    }
+    header nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    header nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    header nav ul li a {
+      color: #d84b8b;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    header nav ul li a:hover {
+      color: #a62c6b;
+    }
+    section {
+      padding: 2rem 0;
+    }
+    h2 {
+      text-align: center;
+      color: #d84b8b;
+    }
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid #ffdde4;
+    }
+    #projects .project-grid, #skills .skills-grid, #testimonials .testimonial-grid, #blog .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .project, .skill, .testimonial, .blog-post {
+      background: #ffe8ef;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .project img, .blog-post img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .skill img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+    .testimonial h4 {
+      margin-top: 1rem;
+      color: #d84b8b;
+    }
+    footer {
+      text-align: center;
+      background: #d84b8b;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    @media (max-width: 768px) {
+      header nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Profile Picture">
+    <p>
+        Hi, I'm April, a passionate designer who loves turning ideas into visually appealing and functional creations. I believe great design isn’t just about aesthetics—it’s about delivering clear and impactful messages.
+        
+        My focus is on creating meaningful work, whether it’s branding, UI/UX, or other design projects. For me, every project is an opportunity to learn, grow, and inspire. Let’s create something amazing together!.</p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon">
+        <h3>HTML</h3>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon">
+        <h3>CSS</h3>
+      </div>
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon">
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="images/p.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Elegant task manager web app.</p>
+      </div>
+      <div class="project">
+        <img src="images/p.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Modern e-commerce prototype.</p>
+      </div>
+      <div class="project">
+        <img src="images/p.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Minimalist portfolio website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container">
+    <h2>What They Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"April is an amazing developer! She is creative and detail-oriented."</p>
+        <h4>- James Gosling</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Working with April was a fantastic experience. Highly recommended!"</p>
+        <h4>- Guido van Rossum</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="container">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-grid">
+      <div class="blog-post">
+        <img src="images/gemas.jpg" alt="Blog Post 1">
+        <h3>How to Start with Web Development</h3>
+        <p>Learn the basics of HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="blog-post">
+        <img src="images/gemas.jpg" alt="Blog Post 2">
+        <h3>Top 5 CSS Tricks for Beginners</h3>
+        <p>Discover simple tips to improve your designs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <img src="images/email.png" alt="Email Icon">
+        <p>Email: <a href="mailto:apriliyaardina1@gmail.com">apriliyaardina1@gmail.com</p>
+      </div>
+      <div class="contact-item">
+        <img src="images/ig.png" alt="Instagram Icon">
+        <p>Instagram: <a href="https://www.instagram.com/aprilia.ardna?igsh=cGZrbTU1dDY2MDd6" target="_blank">@aprilia.ardna</a></p>
+      </div>
+      <div class="contact-item">
+        <img src="images/wa.png" alt="Phone Icon">
+        <p>Phone: <a href="tel:+1234567890">+62 812-6254-5385</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #contact {
+      background-color: #ffe8ef;
+      padding: 3rem 0;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+  
+    .contact-item {
+      background-color: #ffdde4;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      flex-basis: 30%;
+      margin: 10px;
+    }
+  
+    .contact-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+    }
+  
+    .contact-item a {
+      text-decoration: none;
+      color: #d84b8b;
+      font-weight: bold;
+    }
+  
+    .contact-item a:hover {
+      color: #a62c6b;
+    }
+  
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+  <footer>
+    <p>&copy; Apriliya Ardiana Hanum.2023020061</p>
+  </footer>
+</body>
+</html>
